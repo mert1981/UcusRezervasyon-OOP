@@ -6,14 +6,14 @@ public class Koltuk {
     private KoltukTipi koltukTipi;
     private KoltukSinifi koltukSinifi;
 
-    // Yapıcı metod (Constructor)
+    
     public Koltuk(String koltukNo, KoltukTipi koltukTipi, KoltukSinifi koltukSinifi) {
         this.koltukNo = koltukNo;
         this.koltukTipi = koltukTipi;
         this.koltukSinifi = koltukSinifi;
     }
 
-    // Getter ve Setter metodları
+    
     public String getKoltukNo() {
         return koltukNo;
     }

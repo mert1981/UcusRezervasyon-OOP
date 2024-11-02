@@ -11,7 +11,7 @@ public class Bildirim {
         this.bildirimNo = bildirimNo;
         this.olusturmaZamani = olusturmaZamani;
         this.icerik = icerik;
-        this.gonderildi = false;  // Başlangıçta gönderilmedi olarak ayarlanır
+        this.gonderildi = false;  
     }
 
     public int getBildirimNo() {

@@ -16,12 +16,12 @@ public class Yonetici extends Kisi {
     }
 
     public boolean kullaniciEngelle() {
-        // Kullanıcı engelleme işlemi
+        
         return true;
     }
 
     public boolean ucusEkle(Ucus ucus) {
-        // Yeni uçuş ekleme işlemi
+        
         return true;
     }
 
