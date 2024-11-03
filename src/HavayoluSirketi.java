@@ -42,20 +42,20 @@ public class HavayoluSirketi {
     
     public void havalimaniEkle(Havalimani havalimani) {
         havalimanlari.add(havalimani);
-        System.out.println("Havalimanı eklendi: " + havalimani.getAd());
+        System.out.println("Havalimanı basariyla eklendi.. ");
     }
 
     public void havalimaniGuncelle(Havalimani eskiHavalimani, Havalimani yeniHavalimani) {
         int index = havalimanlari.indexOf(eskiHavalimani);
         if (index != -1) {
             havalimanlari.set(index, yeniHavalimani);
-            System.out.println("Havalimanı güncellendi: " + yeniHavalimani.getAd());
+            System.out.println("Havalimanı güncellendi... " );
         }
     }
 
     public void havalimaniSil(Havalimani havalimani) {
         havalimanlari.remove(havalimani);
-        System.out.println("Havalimanı silindi: " + havalimani.getAd());
+        System.out.println("Havalimanı silindi... " );
     }
 
     
