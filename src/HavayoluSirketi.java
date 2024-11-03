@@ -2,12 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HavayoluSirketi {
+	
     private String ad;
-    private String kod;
+    private int kod;
     private List<Havalimani> havalimanlari;
     private List<Ucus> ucuslar;
 
-    public HavayoluSirketi(String ad, String kod) {
+    public HavayoluSirketi(String ad, int kod) {
         this.ad = ad;
         this.kod = kod;
         this.havalimanlari = new ArrayList<>();
@@ -22,11 +23,11 @@ public class HavayoluSirketi {
         this.ad = ad;
     }
 
-    public String getKod() {
+    public int getKod() {
         return kod;
     }
 
-    public void setKod(String kod) {
+    public void setKod(int kod) {
         this.kod = kod;
     }
 
@@ -38,7 +39,7 @@ public class HavayoluSirketi {
         return ucuslar;
     }
 
-    // Havalimanı CRUD İşlemleri
+    
     public void havalimaniEkle(Havalimani havalimani) {
         havalimanlari.add(havalimani);
         System.out.println("Havalimanı eklendi: " + havalimani.getAd());
@@ -57,7 +58,7 @@ public class HavayoluSirketi {
         System.out.println("Havalimanı silindi: " + havalimani.getAd());
     }
 
-    // Uçuş CRUD İşlemleri
+    
     public void ucusEkle(Ucus ucus) {
         ucuslar.add(ucus);
         System.out.println("Uçuş eklendi: " + ucus.getUcusNo());

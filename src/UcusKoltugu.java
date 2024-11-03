@@ -7,7 +7,7 @@ public class UcusKoltugu extends Koltuk {
     private boolean rezerveEdildi;
 
     
-    public UcusKoltugu(String koltukNo, KoltukTipi koltukTipi, KoltukSinifi koltukSinifi, double ucret) {
+    public UcusKoltugu(String koltukNo, KoltukTuru koltukTipi, KoltukSinifi koltukSinifi, double ucret) {
         super(koltukNo, koltukTipi, koltukSinifi);
         this.ucret = ucret;
         this.rezerveEdildi = false; 
@@ -30,14 +30,8 @@ public class UcusKoltugu extends Koltuk {
         this.rezerveEdildi = rezerveEdildi;
     }
 
-    @Override
-    public String toString() {
-        return "UcusKoltugu{" +
-                "koltukNo='" + getKoltukNo() + '\'' +
-                ", koltukTipi=" + getKoltukTipi() +
-                ", koltukSinifi=" + getKoltukSinifi() +
-                ", ucret=" + ucret +
-                ", rezerveEdildi=" + rezerveEdildi +
-                '}';
+    public void getUcret(Double ucret) {
+    	System.out.println("Ucret: "+ucret);
     }
+   
 }

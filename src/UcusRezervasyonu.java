@@ -6,10 +6,10 @@ public class UcusRezervasyonu {
     private String rezervasyonNo;
     private Ucus ucus;
     private Map<Yolcu, UcusKoltugu> koltuk; 
-    private Durum durum;
+    private RezervasyonDurumu durum;
 
     
-    public UcusRezervasyonu(String rezervasyonNo, Ucus ucus, Map<Yolcu, UcusKoltugu> koltuk, Durum durum) {
+    public UcusRezervasyonu(String rezervasyonNo, Ucus ucus, Map<Yolcu, UcusKoltugu> koltuk, RezervasyonDurumu durum) {
         this.rezervasyonNo = rezervasyonNo;
         this.ucus = ucus;
         this.koltuk = koltuk;
@@ -41,11 +41,11 @@ public class UcusRezervasyonu {
         this.koltuk = koltuk;
     }
 
-    public Durum getDurum() {
+    public RezervasyonDurumu getDurum() {
         return durum;
     }
 
-    public void setDurum(Durum durum) {
+    public void setDurum(RezervasyonDurumu durum) {
         this.durum = durum;
     }
 
@@ -54,13 +54,4 @@ public class UcusRezervasyonu {
         return koltuk.keySet().stream().toList();
     }
 
-    @Override
-    public String toString() {
-        return "UcusRezervasyonu{" +
-                "rezervasyonNo='" + rezervasyonNo + '\'' +
-                ", ucus=" + ucus +
-                ", koltuk=" + koltuk +
-                ", durum=" + durum +
-                '}';
-    }
 }

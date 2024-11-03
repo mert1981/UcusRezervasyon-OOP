@@ -3,11 +3,11 @@
 public class Koltuk {
 	
     private String koltukNo;
-    private KoltukTipi koltukTipi;
+    private KoltukTuru koltukTipi;
     private KoltukSinifi koltukSinifi;
 
     
-    public Koltuk(String koltukNo, KoltukTipi koltukTipi, KoltukSinifi koltukSinifi) {
+    public Koltuk(String koltukNo, KoltukTuru koltukTipi, KoltukSinifi koltukSinifi) {
         this.koltukNo = koltukNo;
         this.koltukTipi = koltukTipi;
         this.koltukSinifi = koltukSinifi;
@@ -22,11 +22,11 @@ public class Koltuk {
         this.koltukNo = koltukNo;
     }
 
-    public KoltukTipi getKoltukTipi() {
+    public KoltukTuru getKoltukTipi() {
         return koltukTipi;
     }
 
-    public void setKoltukTipi(KoltukTipi koltukTipi) {
+    public void setKoltukTipi(KoltukTuru koltukTipi) {
         this.koltukTipi = koltukTipi;
     }
 

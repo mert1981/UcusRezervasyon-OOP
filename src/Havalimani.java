@@ -1,13 +1,15 @@
+
 public class Havalimani {
+	
     private String ad;
     private String kod;
-    private Adres adres;
+    private Konum konum;
     private Kisi yonetici;
 
-    public Havalimani(String ad, String kod, Adres adres, Kisi yonetici) {
+    public Havalimani(String ad, String kod, Konum konum, Kisi yonetici) {
         this.ad = ad;
         this.kod = kod;
-        this.adres = adres;
+        this.konum = konum;
         this.yonetici = yonetici;
     }
 
@@ -27,12 +29,12 @@ public class Havalimani {
         this.kod = kod;
     }
 
-    public Adres getAdres() {
-        return adres;
+    public Konum getkonum() {
+        return konum;
     }
 
-    public void setAdres(Adres adres) {
-        this.adres = adres;
+    public void setAdres(Konum konum) {
+        this.konum = konum;
     }
 
     public Kisi getYonetici() {
@@ -48,7 +50,7 @@ public class Havalimani {
         return "Havalimani{" +
                 "ad='" + ad + '\'' +
                 ", kod='" + kod + '\'' +
-                ", adres=" + adres +
+                ", adres=" + konum +
                 ", yonetici=" + yonetici +
                 '}';
     }

@@ -6,8 +6,8 @@ public class NakitOdeme extends Odeme {
 	private double nakitTeklif; 
 
     
-    public NakitOdeme(int odemeID, double miktar, Durum durum, boolean islemTipi, double nakitTeklif) {
-        super(odemeID, miktar, durum, islemTipi);
+    public NakitOdeme(int odemeID, double miktar, Durum durum, double nakitTeklif) {
+        super(odemeID, miktar, durum);
         this.nakitTeklif = nakitTeklif;
     }
 
@@ -20,14 +20,4 @@ public class NakitOdeme extends Odeme {
         this.nakitTeklif = nakitTeklif;
     }
 
-    @Override
-    public String toString() {
-        return "NakitOdeme{" +
-                "nakitTeklif=" + nakitTeklif +
-                ", odemeID=" + getOdemeID() +
-                ", miktar=" + getMiktar() +
-                ", durum=" + getDurum() +
-                ", islemTipi=" + isIslemTipi() +
-                '}';
-    }
 }

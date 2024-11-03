@@ -1,16 +1,16 @@
-public class Odeme {
+public abstract class Odeme {
 	
     private int odemeID;
     private double miktar;
     private Durum durum; 
-    private boolean islemTipi;  
+    
 
    
-    public Odeme(int odemeID, double miktar, Durum durum, boolean islemTipi) {
+    public Odeme(int odemeID, double miktar, Durum durum) {
         this.odemeID = odemeID;
         this.miktar = miktar;
         this.durum = durum;
-        this.islemTipi = islemTipi;
+       
     }
 
     
@@ -38,21 +38,15 @@ public class Odeme {
         this.durum = durum;
     }
 
-    public boolean isIslemTipi() {
-        return islemTipi;
-    }
+  
+ 
 
-    public void setIslemTipi(boolean islemTipi) {
-        this.islemTipi = islemTipi;
-    }
 
-    @Override
-    public String toString() {
-        return "Odeme{" +
-                "odemeID=" + odemeID +
-                ", miktar=" + miktar +
-                ", durum=" + durum +
-                ", islemTipi=" + islemTipi +
-                '}';
-    }
+	public boolean islemYap() {
+		
+		return false;
+	}
+
+
+	
 }

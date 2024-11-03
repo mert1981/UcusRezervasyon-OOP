@@ -2,20 +2,21 @@
 import java.util.List;
 
 public class Ucak {
+	
     private String tip;
     private int kapasite;
     private int uretimYili;
     private List<Ucus> ucuslar;
     private List<KabinUyesi> kabinUyesi;
 
-    // Yapıcı metod (Constructor)
+    
     public Ucak(String tip, int kapasite, int uretimYili) {
         this.tip = tip;
         this.kapasite = kapasite;
         this.uretimYili = uretimYili;
     }
 
-    // Getter ve Setter metodları
+    
     public String getTip() {
         return tip;
     }

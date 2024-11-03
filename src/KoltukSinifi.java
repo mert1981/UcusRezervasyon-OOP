@@ -2,7 +2,7 @@ public class KoltukSinifi extends Koltuk {
     private String sinif;
 
     
-    public KoltukSinifi(String koltukNo, KoltukTipi koltukTipi, KoltukSinifi koltukSinifi, String sinif) {
+    public KoltukSinifi(String koltukNo, KoltukTuru koltukTipi, KoltukSinifi koltukSinifi, String sinif) {
         super(koltukNo, koltukTipi, koltukSinifi);
         this.sinif = sinif;
     }

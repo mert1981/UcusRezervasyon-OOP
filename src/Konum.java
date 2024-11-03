@@ -9,9 +9,13 @@ public class Konum {
         this.sehir = sehir;
     }
 
-    // Getter ve Setter'lar
-    public String getUlke() { return ulke; }
-    public void setUlke(String ulke) { this.ulke = ulke; }
+    
+    public String getUlke() { 
+    	return ulke; 
+    	}
+    public void setUlke(String ulke) {
+    	this.ulke = ulke; 
+    	}
 
     public String getSehir() { 
     	return sehir; 

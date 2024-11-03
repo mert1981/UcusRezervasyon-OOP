@@ -3,19 +3,19 @@ public class Yolcu {
 
 	private String isim;
 	private String soyisim;
-	private String PasaportNo;
-	private Gun DogumTarihi;
+	private String pasaportNo;
+	private Gun dogumTarihi;
 	
 	public Yolcu(String isim, String soyisim, String pasaportNo, Gun dogumTarihi) {
 		
 		this.isim = isim;
 		this.soyisim = soyisim;
-		PasaportNo = pasaportNo;
-		DogumTarihi = dogumTarihi;
+		this.pasaportNo = pasaportNo;
+		this.dogumTarihi = dogumTarihi;
 	}
 
 	public String getPasaportNo() {
-		return PasaportNo;
+		return pasaportNo;
 	}
 
 	

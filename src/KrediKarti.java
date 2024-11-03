@@ -1,11 +1,12 @@
 
 
 public class KrediKarti extends Odeme {
+	
     private String kartUzerindekiIsim;  
 
     
-    public KrediKarti(int odemeID, double miktar, Durum durum, boolean islemTipi, String kartUzerindekiIsim) {
-        super(odemeID, miktar, durum, islemTipi);
+    public KrediKarti(int odemeID, double miktar, Durum durum,  String kartUzerindekiIsim) {
+        super(odemeID, miktar, durum);
         this.kartUzerindekiIsim = kartUzerindekiIsim;
     }
 
@@ -18,14 +19,12 @@ public class KrediKarti extends Odeme {
         this.kartUzerindekiIsim = kartUzerindekiIsim;
     }
 
-    @Override
-    public String toString() {
-        return "KrediKarti{" +
-                "kartUzerindekiIsim='" + kartUzerindekiIsim + '\'' +
-                ", odemeID=" + getOdemeID() +
-                ", miktar=" + getMiktar() +
-                ", durum=" + getDurum() +
-                ", islemTipi=" + isIslemTipi() +
-                '}';
-    }
+
+	@Override
+	public boolean islemYap() {
+		
+		return false;
+	}
+
+  
 }

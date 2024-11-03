@@ -1,10 +1,10 @@
 
-public class KoltukTipi extends Koltuk {
+public class KoltukTuru extends Koltuk {
 	
     private String tipi;
 
    
-    public KoltukTipi(String koltukNo, KoltukTipi koltukTipi, KoltukSinifi koltukSinifi, String tipi) {
+    public KoltukTuru(String koltukNo, KoltukTuru koltukTipi, KoltukSinifi koltukSinifi, String tipi) {
         super(koltukNo, koltukTipi, koltukSinifi);
         this.tipi = tipi;
     }
