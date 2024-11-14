@@ -9,6 +9,7 @@ class Ucak {
     private int kapasite;
     private int uretimYili;
     private static final String DOSYA_YOLU = "src/files/Ucaklar.txt"; // Dosya yolu burada tanımlandı
+    private static final String AYIRICI = ";";
 
 
     public Ucak(String tip, int kapasite, int uretimYili) {
@@ -38,37 +39,17 @@ class Ucak {
                 '}';
     }
 
-    // Dosyadan uçakları okuyan statik metot
-    public static List<Ucak> dosyadanUcaklariOku() {
-    	 List<Ucak> ucakListesi = new ArrayList<>();
-
-         try (BufferedReader br = new BufferedReader(new FileReader(DOSYA_YOLU))) {
-             String satir;
-             br.readLine(); // Başlık satırını atla
-            while ((satir = br.readLine()) != null) {
-                String[] veriler = satir.split(";");
-                String tip = veriler[0];
-                int kapasite = Integer.parseInt(veriler[1]);
-                int uretimYili = Integer.parseInt(veriler[2]);
-                
-                Ucak ucak = new Ucak(tip, kapasite, uretimYili);
-                ucakListesi.add(ucak);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return ucakListesi;
-    }
-    
     public static void listele() {
-        List<Ucak> ucakListesi = dosyadanUcaklariOku();
-
+        List<String[]> ucakVerileri = DosyaOkuyucu.dosyaOku(DOSYA_YOLU, AYIRICI);
         System.out.printf("%-20s %-10s %-15s%n", "Tip", "Kapasite", "Üretim Yılı");
         System.out.println("---------------------------------------------");
 
-        for (Ucak ucak : ucakListesi) {
-            System.out.printf("%-20s %-10d %-15d%n", ucak.tip, ucak.kapasite, ucak.uretimYili);
+        for (String[] veriler : ucakVerileri) {
+            String tip = veriler[0].trim();
+            int kapasite = Integer.parseInt(veriler[1].trim());
+            int uretimYili = Integer.parseInt(veriler[2].trim());
+
+            System.out.printf("%-20s %-10d %-15d%n", tip, kapasite, uretimYili);
         }
     }
 }

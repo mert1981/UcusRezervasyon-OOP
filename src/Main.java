@@ -8,8 +8,13 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
     	
+    	System.out.println("Tüm kisiler:");
+    	Kisi.listele();
+    	System.out.println();
+    	Müsteri.listele();
     	
-        
-        Kisi.listele();
-    }
-    }
+    	
+    	
+    	
+   }
+}
